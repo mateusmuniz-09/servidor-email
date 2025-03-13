@@ -8,6 +8,9 @@ const PORT = process.env.PORT || 8080; // O Vercel vai definir process.env.PORT
 app.use(express.json()); // Para permitir JSON no body das requisições
 app.use(cors()); // Para permitir requisições do front-end
 
+app.get("/", (req, res) => {
+  res.send("Servidor rodando corretamente!");
+
 // Configuração do Nodemailer
 const transporter = nodemailer.createTransport({
   service: "gmail",

@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 const cors = require("cors");
 
 const app = express();
-const PORT = process.env.PORT || 3000; // O Vercel vai definir process.env.PORT
+const PORT = process.env.PORT || 8080; // O Vercel vai definir process.env.PORT
 
 app.use(express.json()); // Para permitir JSON no body das requisições
 app.use(cors()); // Para permitir requisições do front-end
